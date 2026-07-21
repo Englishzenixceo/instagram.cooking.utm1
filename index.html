@@ -4,31 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>زنیکس | شروع مکالمه روان انگلیسی</title>
-
-  <!-- فونت -->
   <link href="https://db.onlinewebfonts.com/c/235b71a9b409e684e865eb4a996e925e?family=IRANYekan" rel="stylesheet">
-
-  <!-- مسیر صحیح برای اینستاگرام -->
-  <link rel="stylesheet" href="./style.css?v=3">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Header -->
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="wrap header-inner">
-      <img src="./logo.png" alt="زنیکس" class="logo">
+      <img src="logo.png" alt="زنیکس" class="logo">
     </div>
   </header>
 
+  <!-- ===== Hero ===== -->
   <main>
-
-    <!-- Hero -->
     <section class="hero">
       <div class="wrap">
 
         <div class="hero-banner">
-          <img src="./hero.png" alt="۹۰ روزه انگلیسی مکالمه کن - زنیکس">
+          <img src="hero.png" alt="۹۰ روزه انگلیسی مکالمه کن - زنیکس">
         </div>
 
         <span class="site-url lang-en">
@@ -49,65 +43,131 @@
       </div>
     </section>
 
-    <!-- Gifts -->
+    <!-- ===== Gifts / Features ===== -->
     <section class="gifts">
       <div class="wrap">
         <h2>هدیه شروع مسیر تو</h2>
-        <div class="path-line"></div>
+        <div class="path-line" aria-hidden="true"></div>
 
         <div class="gift-list">
-
           <div class="gift-item">
             <span class="check">✅</span>
-            <h3>سه جلسه آموزش مکالمه رایگان</h3>
-            <p>با روش ویژه زنیکس، از همون جلسه اول شروع به صحبت کردن می‌کنی.</p>
+            <div>
+              <h3>سه جلسه آموزش مکالمه رایگان</h3>
+              <p>با روش ویژه زنیکس، از همون جلسه اول شروع به صحبت کردن می‌کنی.</p>
+            </div>
           </div>
 
           <div class="gift-item">
             <span class="check">✅</span>
-            <h3>پلن آموزشی اختصاصی + مشاوره رایگان</h3>
-            <p>یک برنامه مخصوص سطح و هدف خودت، بدون هزینه.</p>
+            <div>
+              <h3>پلن آموزشی اختصاصی + مشاوره رایگان</h3>
+              <p>یک برنامه مخصوص سطح و هدف خودت، بدون هزینه.</p>
+            </div>
           </div>
 
           <div class="gift-item">
             <span class="check">✅</span>
-            <h3>رزرو تایم تعیین سطح</h3>
-            <p>سطح واقعی زبانت رو با یه جلسه کوتاه و رایگان مشخص کن.</p>
+            <div>
+              <h3>رزرو تایم تعیین سطح</h3>
+              <p>سطح واقعی زبانت رو با یه جلسه کوتاه و رایگان مشخص کن.</p>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Signup -->
+    <!-- ===== Signup Form ===== -->
     <section class="signup signup-stage" id="signup">
-
-      <div class="stage-glow stage-glow-a"></div>
-      <div class="stage-glow stage-glow-b"></div>
-      <div class="stage-grain"></div>
-      <div class="stage-spotlight"></div>
+      <div class="stage-glow stage-glow-a" aria-hidden="true"></div>
+      <div class="stage-glow stage-glow-b" aria-hidden="true"></div>
+      <div class="stage-grain" aria-hidden="true"></div>
+      <div class="stage-spotlight" aria-hidden="true"></div>
 
       <div class="wrap signup-wrap">
         <div class="signup-box">
 
-          <!-- Owl -->
-          <div class="owl-perch">
+          <!-- Owl mascot -->
+          <div class="owl-perch" aria-hidden="true">
             <div class="owl-shadow"></div>
+            <svg class="owl" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="owlBody" cx="35%" cy="28%" r="80%">
+                  <stop offset="0%" stop-color="#8CF0B8"/>
+                  <stop offset="45%" stop-color="#38C989"/>
+                  <stop offset="100%" stop-color="#0E6B4F"/>
+                </radialGradient>
+                <radialGradient id="owlBelly" cx="50%" cy="20%" r="90%">
+                  <stop offset="0%" stop-color="#F3FFF8"/>
+                  <stop offset="100%" stop-color="#CFEEDD"/>
+                </radialGradient>
+                <radialGradient id="owlCheek" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#FFB199"/>
+                  <stop offset="100%" stop-color="#FFB199" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="owlWing" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1F9D6C"/>
+                  <stop offset="100%" stop-color="#0A4F39"/>
+                </linearGradient>
+                <radialGradient id="owlEye" cx="40%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#FFFFFF"/>
+                  <stop offset="100%" stop-color="#E8F7EF"/>
+                </radialGradient>
+              </defs>
 
-            <!-- جغد کامل -->
-            <svg class="owl" viewBox="0 0 220 220">
-              <!-- بدنه، بال‌ها، چشم‌ها، همه مثل نسخهٔ اصلی -->
-              <!-- (همان کدی که خودت فرستادی، بدون تغییر) -->
+              <!-- ears -->
+              <path d="M62 46 C 50 18, 78 8, 84 34 Z" fill="url(#owlWing)"/>
+              <path d="M158 46 C 170 18, 142 8, 136 34 Z" fill="url(#owlWing)"/>
+
+              <!-- body -->
+              <ellipse cx="110" cy="128" rx="82" ry="78" fill="url(#owlBody)"/>
+              <ellipse cx="110" cy="150" rx="52" ry="46" fill="url(#owlBelly)"/>
+
+              <!-- wings -->
+              <g class="owl-wing owl-wing-left">
+                <path d="M66 122 C 36 120, 12 146, 19 178 C 23 200, 46 203, 65 187 C 57 165, 59 142, 66 122 Z" fill="url(#owlWing)"/>
+                <path d="M60 130 C 44 132, 30 150, 32 170 C 42 158, 50 144, 60 130 Z" fill="#4FD69A" opacity="0.5"/>
+              </g>
+              <g class="owl-wing owl-wing-right">
+                <path d="M154 122 C 184 120, 208 146, 201 178 C 197 200, 174 203, 155 187 C 163 165, 161 142, 154 122 Z" fill="url(#owlWing)"/>
+                <path d="M160 130 C 176 132, 190 150, 188 170 C 178 158, 170 144, 160 130 Z" fill="#4FD69A" opacity="0.5"/>
+              </g>
+
+              <!-- cheeks -->
+              <circle cx="62" cy="140" r="16" fill="url(#owlCheek)"/>
+              <circle cx="158" cy="140" r="16" fill="url(#owlCheek)"/>
+
+              <!-- eyes -->
+              <g class="owl-eye owl-eye-left">
+                <circle cx="82" cy="112" r="26" fill="url(#owlEye)"/>
+                <circle class="owl-pupil" cx="88" cy="114" r="12" fill="#123527"/>
+                <circle cx="93" cy="107" r="4" fill="#FFFFFF"/>
+              </g>
+              <g class="owl-eye owl-eye-right">
+                <circle cx="138" cy="112" r="26" fill="url(#owlEye)"/>
+                <circle class="owl-pupil" cx="144" cy="114" r="12" fill="#123527"/>
+                <circle cx="149" cy="107" r="4" fill="#FFFFFF"/>
+              </g>
+
+              <!-- eyelids for blinking -->
+              <path class="owl-lid owl-lid-left" d="M56 112 a26 26 0 0 1 52 0 Z" fill="#0E6B4F"/>
+              <path class="owl-lid owl-lid-right" d="M112 112 a26 26 0 0 1 52 0 Z" fill="#0E6B4F"/>
+
+              <!-- beak -->
+              <path d="M110 128 L 122 144 L 98 144 Z" fill="#F6A623"/>
+
+              <!-- feet -->
+              <path d="M92 202 l -6 12 M92 202 l 6 12 M92 202 l 0 14" stroke="#F6A623" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M128 202 l -6 12 M128 202 l 6 12 M128 202 l 0 14" stroke="#F6A623" stroke-width="4" stroke-linecap="round" fill="none"/>
             </svg>
 
             <div class="owl-bubble">همینجا شمارتو بذار</div>
           </div>
 
           <h2>شماره موبایلت رو وارد کن</h2>
-          <p>تا فوری دریافتشون کنی</p>
+          <p>همکاران ما در اسرع وقت باهات تماس می‌گیرن</p>
 
-          <!-- Formspree -->
-          <form id="phoneForm" action="https://formspree.io/f/xlgqldeq" method="POST">
+          <form id="phoneForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <input
               type="tel"
               name="phone"
@@ -122,23 +182,19 @@
           </form>
 
           <p id="message"></p>
-
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
+  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="wrap">
-      <img src="./logo.png" alt="زنیکس" class="logo logo-footer">
-      <p>© انگلیش زنیکس - آخرین ایستگاه قبل از پرواز</p>
+      <img src="logo.png" alt="زنیکس" class="logo logo-footer">
+      <p>© زنیکس - همراه تو در مسیر یادگیری زبان</p>
     </div>
   </footer>
 
-  <!-- مسیر صحیح برای اینستاگرام -->
-  <script src="./script.js?v=3"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
