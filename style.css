@@ -400,26 +400,24 @@ img {
   50% { transform: translateX(-50%) scale(0.8); opacity: 0.35; }
 }
 
-.owl-wing {
-  transform-origin: 50% 15%;
-}
-
 .owl-wing-left {
-  animation: wing-wave-left 2.6s ease-in-out infinite;
+  transform-origin: 66px 122px;
+  animation: wing-wave-left 3.2s ease-in-out infinite;
 }
 
 .owl-wing-right {
-  animation: wing-wave-right 2.6s ease-in-out infinite 0.15s;
+  transform-origin: 154px 122px;
+  animation: wing-wave-right 3.2s ease-in-out infinite 0.2s;
 }
 
 @keyframes wing-wave-left {
   0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(-18deg); }
+  50% { transform: rotate(-9deg); }
 }
 
 @keyframes wing-wave-right {
   0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(18deg); }
+  50% { transform: rotate(9deg); }
 }
 
 .owl-pupil {
@@ -450,23 +448,36 @@ img {
 
 .owl-bubble {
   position: absolute;
-  top: 6px;
-  right: -64px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--white);
   color: var(--green-deep);
   font-size: 12px;
   font-weight: 700;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: 999px;
   box-shadow: 0 8px 18px -6px rgba(0,0,0,0.35);
   white-space: nowrap;
   animation: bubble-pop 3.4s ease-in-out infinite;
 }
 
+.owl-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
 @keyframes bubble-pop {
-  0%, 12% { opacity: 0; transform: translateY(4px) scale(0.9); }
-  20%, 70% { opacity: 1; transform: translateY(0) scale(1); }
-  85%, 100% { opacity: 0; transform: translateY(4px) scale(0.9); }
+  0%, 12% { opacity: 0; transform: translateX(-50%) translateY(4px) scale(0.9); }
+  20%, 70% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+  85%, 100% { opacity: 0; transform: translateX(-50%) translateY(4px) scale(0.9); }
 }
 
 @media (max-width: 520px) {
@@ -475,8 +486,8 @@ img {
     top: -60px;
   }
   .owl-bubble {
-    right: -30px;
     font-size: 11px;
+    top: -26px;
   }
   .signup-box {
     padding-top: 46px;
