@@ -2,8 +2,10 @@ const form = document.getElementById('phoneForm');
 const messageEl = document.getElementById('message');
 
 // ====== تنظیمات تلگرام ======
-const TELEGRAM_BOT_TOKEN = '8538849342:AAFCoJ8scmpZMR10ZLEwpyc4awUbLDdstBw';
-const TELEGRAM_CHAT_ID = '541619215';
+// این دو مقدار رو با اطلاعات بات و چت خودتون جایگزین کنید
+const TELEGRAM_BOT_TOKEN = "8538849342:AAFCoJ8scmpZMR10ZLEwpyc4awUbLDdstBw";
+const TELEGRAM_CHAT_ID = "541619215";مثال: 123456789
+// =============================
 
 form.addEventListener('submit', function (e) {
   e.preventDefault(); // جلوگیری از رفرش شدن صفحه
